@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网络密码门禁</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	<!--<script src="js/websocket.js"></script>-->
+	<!--<script src="js/key.js"></script>-->
+	<script src="js/WebKey.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body onload="init()">
+	<div id="container">
+		<div id="first">
+			<p id="font">网络密码门禁</p>
+		</div>
+		<div id="second">
+			<p style="color: yellow; font-size:20px;">光敏传感器的开锁状态:</p>
+			<div id="open">
+				光敏开锁
+			</div>
+			<div id="text"></div>
+		</div>
+		<div id="third">
+			<p style="display:inline-block; width:100px; height:80px; line-height: 80px; text-align: center; font-size: 40px; border-right: 2px solid black;">密码:</p>
+			<div id="password"></div>
+		</div>
+		<div id="fourth">
+			<table>
+				<tr>
+					<td>
+						<input type="button" id="But1"  class="button_type1"  value="1"/>
+					</td>
+					<td>
+						<input type="button" id="But2"  class="button_type1"  value="2"/>
+					</td>
+					<td>
+						<input type="button" id="But3"  class="button_type1"  value="3"/>
+					</td>
+					<td>
+						<input type="button" id="ButCLR"  class="button_type1"  value="CLR"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="But4"  class="button_type1"  value="4"/>
+					</td>
+					<td>
+						<input type="button" id="But5"  class="button_type1"  value="5"/>
+					</td>
+					<td>
+						<input type="button" id="But6"  class="button_type1"  value="6"/>
+					</td>
+					<td>
+						<input type="button" id="ButF1" class="button_type1"  value="F1"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="But7"  class="button_type1"  value="7"/> 
+					</td>
+					<td>
+						<input type="button" id="But8"  class="button_type1"  value="8"/>
+					</td>
+					<td>
+						<input type="button" id="But9"  class="button_type1"  value="9"/>
+					</td>
+					<td>
+						<input type="button" id="ButF2" class="button_type1"  value="F2"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="But*"  class="button_type1"  value="*"/>
+					</td>
+					<td>
+						<input type="button" id="But0"  class="button_type1"  value="0"/>
+					</td>
+					<td>
+						<input type="button" id="But#"  class="button_type1"  value="#"/>
+					</td>
+					<td>
+						<input type="button" id="ButOK" class="button_type1"  value="OK" />
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+
