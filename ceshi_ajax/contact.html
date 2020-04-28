@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+		<title>江苏易有车汽车服务有限公司</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script src="js/jquery.js"></script>
+		<script src="./js/contact.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/city-picker.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">
+							<img src="img/logo.jpg" style="height:30px;">
+						</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">公司首页</a></li>
+							<li><a href="about.html">关于我们</a></li>
+							<li class="active"><a href="contact.html">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="panel" style="border:mediumturquoise solid 2px;">
+						<div class="panel-heading" style="background-image: linear-gradient(#5e9bc4, #baa0f7);">
+							<h3 class="panel-title">
+								<p>
+									<span class="glyphicon glyphicon-earphone"></span>
+									&nbsp; Phone
+								</p>
+							</h3>
+						</div>
+						<div class="panel-body">
+							<span>你可以直接拨打电话联系：</span>
+							<a href="tel:02584119009">02584119009</a>
+							&nbsp;(杨女士)
+						</div>
+					</div>
+					<div class="panel" style="border:mediumturquoise solid 2px;">
+						<div class="panel-heading" style="background-image: linear-gradient(#5e9bc4, #baa0f7);">
+							<h3 class="panel-title">
+								<p>
+									<span class="glyphicon glyphicon-envelope"></span>
+									&nbsp; Email
+								</p>
+							</h3>
+						</div>
+						<div class="panel-body">
+							<span>你可以直接发送电子邮件联系：</span>
+							<a href="mailto:yiyouche@aliyun.com">yiyouche@aliyun.com</a>
+							<hr/>
+							<span>你可以直接发送电子邮件联系：</span>
+							<a href="mailto:yiyouche@tom.com">yiyouche@tom.com</a>
+						</div>
+					</div>
+					<div class="panel" style="border:mediumturquoise solid 2px;">
+						<div class="panel-heading" style="background-image: linear-gradient(#5e9bc4, #baa0f7);">
+							<h3 class="panel-title">
+								<p>
+									<span class="glyphicon glyphicon-send"></span>&nbsp; Address</p>
+							</h3>
+						</div>
+						<div class="panel-body">
+							<hr>
+							南京市江宁区东山街道天行西路9号润景科技广场1号楼1A102(南京总部)
+							<hr>
+							<div class="row">
+								<div class="col-md-12 col-xs-12">
+									<div style="height:600px; border: silver solid 1px;" id="dituContent"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="panel" style="border:mediumturquoise solid 2px;">
+						<div class="panel-heading" style="background-image: linear-gradient(#5e9bc4, #baa0f7);">
+							<h3 class="panel-title">
+							<p>
+								<span class="glyphicon glyphicon-envelope"></span>
+								&nbsp; Message
+							</p>
+							</h3>
+						</div>
+						<div class="panel-body">
+							<form class="form-horizontal" role="form" action="php/DataBaseInfos.php" method="get">
+								<div class="form-group">
+									<label for="firstname" class="col-sm-2 control-label">姓名</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="name" name="pname" placeholder="请输入姓名">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="lastname" class="col-sm-2 control-label">手机号</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="pphone" id="age" placeholder="请输入手机号">
+									</div>
+								</div>
+									<div class="form-group">
+									<label for="lastname" class="col-sm-2 control-label">中意车型</label>
+									<div class="col-sm-10">
+										<select class="form-control" id="select1" name="pcar">
+										</select>
+									</div>
+								</div>
+
+
+
+								<div class="form-group">
+									<label for="lastname" class="col-sm-2 control-label">所在城市</label>
+									<div class="col-sm-10">
+										<input id="city-picker3" class="form-control" type="text" data-toggle="city-picker" style="width:240px;" name="pcity">
+									</div>
+								</div>
+
+
+
+
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-success">提交</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="background-image: linear-gradient(#5e9bc4, #baa0f7);">
+			<div class="row">
+				<div class="col-md-3 col-xs-12">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="./img/f_l.png" class="img-responsive center-block" style="margin-top:25px;" alt="f_l">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"></div>
+				<div class="col-md-6 col-xs-12">
+					<ul style="list-style: none;">
+						<li>
+							<p style="font-size:30px; color: white;">400-2365-3658</p>
+						</li>
+						<li>
+							<p style="font-weight: bold;">周一至周日：9:00-17:00</p>
+						</li>
+						<li>
+							<p style="font-weight: bold;">
+								南京市江宁区天行西路9号润景科技广场1号楼1A102
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<script>
+			window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+		</script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=ed1fafa0307bb4991da41f54d8a88b46"></script>
+
+		<script src="js/city-picker.data.js"></script>
+		<script src="js/city-picker.js"></script>
+		<script src="js/main.js"></script>
+
+		</script>
+		<script type="text/javascript">
+			function initMap() {
+				createMap(); //创建地图
+				setMapEvent(); //设置地图事件
+				addMapControl(); //向地图添加控件
+				addMarker(); //向地图中添加marker
+			}
+			function createMap() {
+				var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+				var point = new BMap.Point(118.87597, 31.981595); //定义一个中心点坐标
+				map.centerAndZoom(point, 17); //设定地图的中心点和坐标并将地图显示在地图容器中
+				window.map = map; //将map变量存储在全局
+			}
+			function setMapEvent() {
+				map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+				map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+				map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+				map.enableKeyboard(); //启用键盘上下左右键移动地图
+			}
+			function addMapControl() {
+				var ctrl_nav = new BMap.NavigationControl({
+					anchor: BMAP_ANCHOR_TOP_LEFT,
+					type: BMAP_NAVIGATION_CONTROL_LARGE
+				});
+				map.addControl(ctrl_nav);
+				var ctrl_ove = new BMap.OverviewMapControl({
+					anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+					isOpen: 1
+				});
+				map.addControl(ctrl_ove);
+				var ctrl_sca = new BMap.ScaleControl({
+					anchor: BMAP_ANCHOR_BOTTOM_LEFT
+				});
+				map.addControl(ctrl_sca);
+			}
+			var markerArr = [{
+				title: "我们的总公司",
+				content: "我的备注",
+				point: "118.875943|31.981656",
+				isOpen: 0,
+				icon: {
+					w: 21,
+					h: 21,
+					l: 0,
+					t: 0,
+					x: 6,
+					lb: 5
+				}
+			}];
+			function addMarker() {
+				for (var i = 0; i < markerArr.length; i++) {
+					var json = markerArr[i];
+					var p0 = json.point.split("|")[0];
+					var p1 = json.point.split("|")[1];
+					var point = new BMap.Point(p0, p1);
+					var iconImg = createIcon(json.icon);
+					var marker = new BMap.Marker(point, {
+						icon: iconImg
+					});
+					var iw = createInfoWindow(i);
+					var label = new BMap.Label(json.title, {
+						"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)
+					});
+					marker.setLabel(label);
+					map.addOverlay(marker);
+					label.setStyle({
+						borderColor: "#808080",
+						color: "#333",
+						cursor: "pointer"
+					});
+					(function() {
+						var index = i;
+						var _iw = createInfoWindow(i);
+						var _marker = marker;
+						_marker.addEventListener("click", function() {
+							this.openInfoWindow(_iw);
+						});
+						_iw.addEventListener("open", function() {
+							_marker.getLabel().hide();
+						})
+						_iw.addEventListener("close", function() {
+							_marker.getLabel().show();
+						})
+						label.addEventListener("click", function() {
+							_marker.openInfoWindow(_iw);
+						})
+						if (!!json.isOpen) {
+							label.hide();
+							_marker.openInfoWindow(_iw);
+						}
+					})()
+				}
+			}
+			function createInfoWindow(i) {
+				var json = markerArr[i];
+				var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title +
+					"</b><div class='iw_poi_content'>" + json.content + "</div>");
+				return iw;
+			}
+			function createIcon(json) {
+				var icon = new BMap.Icon(new BMap.Size(json.w, json.h), {
+					imageOffset: new BMap.Size(-json.l, -json.t),
+					infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+					offset: new BMap.Size(json.x, json.h)
+				})
+				return icon;
+			}
+			initMap();
+		</script>
+	</body>
+</html>
+   

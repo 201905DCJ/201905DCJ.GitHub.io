@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>车型录入</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/CarsName.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>车型录入</h1>
+      <hr/>
+	    <form role="form" method="get" action="php/DataBaseCars.php">
+	      <div class="form-group">
+	        <label for="name">车型名称:</label>
+	        <input type="text" class="form-control" id="name" placeholder="请输入名称" name="CarsName">
+        </div>
+        <div class="form-group">
+	        <label for="price">车型指导价:</label>
+	        <input type="text" class="form-control" id="price" placeholder="请输入价格" name="CarsPrice">
+	      </div>
+	      <button type="submit" class="btn btn-default btn-success">提交</button>
+      </form>
+      <br/>
+      <a href="Carsinfo.html">
+        <button type="button" class="btn btn-info">车型管理</button>
+      </a>
+      <hr/>
+    <br/>
+</div>
+
+<div class="container-fluid">
+  <h1>客户信息</h1>
+  <div id="user"></div>
+</div>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
